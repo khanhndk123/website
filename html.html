@@ -52,8 +52,8 @@
 
 
     
-  <div class="letter-container">
-    <div class="letter closed" id="letter">
+  <div class="letter-yes">
+    <div class="letter closed" id="letter1">
       <h1>Chào Qyn cute,</h1>
       <p>
         Hôm nay là ngày 25-11-2024, chúc eny của Pột noel vui vẻ, an lành và thật hạnh phúc bên gia đình nhé🥰.<br>
@@ -66,14 +66,23 @@
       </p>
       <p class="signature">Người nhận: Huỳnh Phương Quyên<br>Người gửi: Pột</p>
     </div>
+    <div class="letter-no">
+      <div class="letter closed" id="letter2">
+        <h1>Cook</h1>
+      </div>
     <p>Chào bạn <br> Bạn có phải Qyn hay không?</p>
-    <button class="open-btn" onclick="openLetter()">có / không</button>
+    <button class="open-btn-co" onclick="openLetter()">có</button>
+    <button class="open-btn-khong" onclick="opennoLetter()">không</button>
   </div>
 
   <script>
         function openLetter() {
-        const letter = document.getElementById('letter');
+        const letter = document.getElementById('letter1');
         letter.classList.add('open');
+    }
+        function opennoLetter() {
+        const letter = document.getElementById('letter2');
+        letter.classList.add('open');  
     }
   </script>
 </body>
