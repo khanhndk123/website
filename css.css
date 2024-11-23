@@ -1,216 +1,215 @@
 
 
 @keyframes snow-fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
 }
 
 .snowflakes {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .snowflakes .flake {
-    position: absolute;
-    top: -10px;
+  position: absolute;
+  top: -10px;
 
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    animation: fall 5s linear infinite;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: fall 5s linear infinite;
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
 }
 
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 body {
-    font-family: sans-serif;
-    background: linear-gradient(to bottom, #1100ff, #008080);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .frame {
-    position: absolute;
-    width: 150px;
-    height: 200px;
-    border: 10px solid #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .frame:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  }
-  
-  .frame.top-left {
-    top: 10px;
-    left: 10px;
-  }
-  
-  .frame.top-right {
-    top: 10px;
-    right: 10px;
-  }
-  
-  .frame.bottom-left {
-    bottom: 10px;
-    left: 10px;
-  }
-  
-  .frame.bottom-right {
-    bottom: 10px;
-    right: 10px;
-  }
-  
-  .decor {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 24px;
-    animation: float 3s infinite ease-in-out;
-  }
-  
-  .decor.snowflake {
-    color: #f0f8ff;
-  }
-  
-  .decor.bells {
-    color: #ffd700;
-  }
-  
-  .decor.santa {
-    color: #ff6347;
-  }
-  
-  .decor.tree {
-    color: #32cd32;
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-
-
-.letter-yes {
-    text-align: center;
-    position: relative;
-  }
-  
-.letter-no {
-    text-align: center;
-    position: relative;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #1100ff, #008080);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
 }
-  
-  .letter {
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #fff;
-    color: #2a5298;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    font-family: 'Georgia', serif;
-    overflow: hidden;
-    transform: scaleY(0); /* Thư gấp ban đầu */
-    transform-origin: top center;
-    transition: transform 0.5s ease-in-out;
-    margin: 0 auto; /* Giữ thư luôn ở giữa */
-    top: 50%;
+
+.frame {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  border: 10px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.frame:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.frame.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.frame.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.frame.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.frame.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.decor {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.decor.snowflake {
+  color: #f0f8ff;
+}
+
+.decor.bells {
+  color: #ffd700;
+}
+
+.decor.santa {
+  color: #ff6347;
+}
+
+.decor.tree {
+  color: #32cd32;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  .letter.open {
-    transform: scaleY(1); /* Mở thư */
+  50% {
+    transform: translateY(-10px);
   }
-  
-  .letter h1 {
-    font-size: 24px;
-    color: #e74c3c;
-    margin-bottom: 10px;
-  }
-  
-  .letter p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  .letter .signature {
-    margin-top: 20px;
-    font-style: italic;
-    color: #34495e;
-  }
-  
-  
-  .open-btn-co {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background: #ffffff;
-    color: #000000;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .open-btn-khong {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background: #000000;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .open-btn-co:hover {
-    background: #c300ff;
-  }
-  
-  .open-btn-khong:hover {
-    background: #c300ff;
-  }
-  
+}
+
+
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #1100ff, #008080);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.letter-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.letter {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #2a5298;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+  display: none; /* Ẩn nội dung mặc định */
+}
+
+.letter.open {
+  display: block; /* Hiển thị nội dung khi được kích hoạt */
+}
+
+.letter h1 {
+  font-size: 24px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.letter p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.letter .signature {
+  margin-top: 20px;
+  font-style: italic;
+  color: #34495e;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.open-btn-co, .open-btn-khong {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.open-btn-co {
+  background: #ffffff;
+  color: #000000;
+}
+
+.open-btn-khong {
+  background: #000000;
+  color: #ffffff;
+}
+
+.open-btn-co:hover, .open-btn-khong:hover {
+  background: #c300ff;
+}
