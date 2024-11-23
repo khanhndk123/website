@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Happy Noel</title>
+    
+</head>
+<body>
+
+    <!-- Hiệu ứng tuyết rơi -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="flake" style="left: 10%; animation-duration: 12s;">❄</div>
+        <div class="flake" style="left: 30%; animation-duration: 14s;">❄</div>
+        <div class="flake" style="left: 50%; animation-duration: 16s;">❄</div>
+        <div class="flake" style="left: 70%; animation-duration: 18s;">❄</div>
+        <div class="flake" style="left: 90%; animation-duration: 20s;">❄</div>
+        <div class="flake" style="left: 20%; animation-duration: 11s;">❄</div>
+        <div class="flake" style="left: 40%; animation-duration: 13s;">❄</div>
+        <div class="flake" style="left: 60%; animation-duration: 15s;">❄</div>
+        <div class="flake" style="left: 80%; animation-duration: 17s;">❄</div>
+        <div class="flake" style="left: 100%; animation-duration: 19s;">❄</div>
+        <div class="flake" style="left: 20%; animation-duration: 21s;">❄</div>
+        <div class="flake" style="left: 40%; animation-duration: 23s;">❄</div>
+        <div class="flake" style="left: 60%; animation-duration: 25s;">❄</div>
+        <div class="flake" style="left: 80%; animation-duration: 27s;">❄</div>
+        <div class="flake" style="left: 100%; animation-duration: 29s;">❄</div>
+        <div class="flake" style="left: 10%; animation-duration: 22s;">❄</div>
+        <div class="flake" style="left: 30%; animation-duration: 24s;">❄</div>
+        <div class="flake" style="left: 50%; animation-duration: 26s;">❄</div>
+        <div class="flake" style="left: 70%; animation-duration: 28s;">❄</div>
+        <div class="flake" style="left: 90%; animation-duration: 30s;">❄</div>
+    </div>
+
+    <div class="frame top-left">
+        <img src="img/3.jpg" alt="Photo 1">
+        <div class="decor snowflake">❄</div>
+   </div>
+   <div class="frame top-right">
+        <img src="img/4.jpg" alt="Photo 2">
+        <div class="decor bells">🔔</div>
+   </div>
+   <div class="frame bottom-left">
+        <img src="img/5.jpg" alt="Photo 3">
+        <div class="decor santa">🎅</div>
+   </div>
+   <div class="frame bottom-right">
+        <img src="img/6.jpg" alt="Photo 4">
+        <div class="decor tree">🎄</div>
+   </div>
+
+
+    <!-- Thư -->
+  <div class="letter-container">
+    <div class="letter closed" id="letter">
+      <h1>Chào Qyn cute,</h1>
+      <p>
+        Hôm nay là ngày 25-11-2024, chúc eny của Pột noel vui vẻ, an lành và thật hạnh phúc bên gia đình nhé🥰.<br>
+        Khánh có vài dòng thơ hơi ấy=)) <br>
+        <br>
+        Quyên ơi, em tựa nắng mai, <br> 
+        Làm tim anh lạc, làm hai mắt mờ. <br> 
+        Nhìn em, lòng bỗng ngẩn ngơ,  <br>
+        Chắc là yêu mất, thẫn thờ vì Quyên! <br>
+      </p>
+      <p class="signature">Người nhận: Huỳnh Phương Quyên<br>Người gửi: Pột</p>
+    </div>
+    <p>Chào bạn <br> Bạn có phải Qyn hay không?</p>
+    <button class="open-btn" onclick="openLetter()">có / không</button>
+  </div>
+
+  <script>
+        function openLetter() {
+        const letter = document.getElementById('letter');
+        letter.classList.add('open');
+    }
+  </script>
+</body>
+</html>
