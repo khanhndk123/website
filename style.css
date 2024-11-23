@@ -1,7 +1,7 @@
-/* Định dạng cho body */
+
 body {
-    background-color: #f1f1f1; /* Màu nền sáng cho Giáng Sinh */
-    background-image: url(img/2.jpg); /* Thay hình nền Giáng Sinh */
+    background-color: #f1f1f1; 
+    background-image: url(img/2.jpg); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-/* Container chứa form */
+
 .container {
     background-color: rgba(255, 255, 255, 0.8); /* Nền mờ */
     background-image: url(img/1.jpg);
@@ -35,20 +35,20 @@ body {
     z-index: 1;
 }
 
-/* Tiêu đề */
+
 h2 {
-    color: #e63946; /* Màu đỏ Giáng Sinh */
+    color: #e63946; 
     font-size: 2.5em;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.6); /* Đổ bóng */
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.6); 
     margin-bottom: 20px;
 }
 
-/* Định dạng cho input password */
+
 input[type="Password"] {
     padding: 10px;
     width: 80%;
-    border: 2px solid #ff6347; /* Viền cam Giáng Sinh */
+    border: 2px solid #ff6347; 
     border-radius: 5px;
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -56,10 +56,10 @@ input[type="Password"] {
     color: #333;
 }
 
-/* Định dạng cho nút submit */
+
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #ff4500; /* Màu cam Noel */
+    background-color: #ff4500; 
     border: none;
     border-radius: 5px;
     font-size: 1.2em;
@@ -69,10 +69,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e63946; /* Màu đỏ khi hover */
+    background-color: #e63946; 
 }
 
-/* Hiệu ứng cho label */
+
 label {
     font-size: 1.2em;
     color: #333;
@@ -80,10 +80,9 @@ label {
     display: block;
 }
 
-/* Hiệu ứng cho border và bóng khi focus vào input */
+
 input[type="Password"]:focus, input[type="submit"]:focus {
     outline: none;
-    border-color: #228b22; /* Màu xanh lá Noel */
-    box-shadow: 0 0 8px rgba(0, 255, 85, 0.7); /* Bóng xanh lá khi focus */
-}
+    border-color: #228b22; 
+    box-shadow: 0 0 8px rgba(0, 255, 85, 0.7); 
 
